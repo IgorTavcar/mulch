@@ -1,13 +1,14 @@
 import { writeFile } from "node:fs/promises";
 import { type Command, Option } from "commander";
+import type { DomainRecords } from "../utils/budget.ts";
 import {
-  DEFAULT_BUDGET,
   applyBudget,
+  DEFAULT_BUDGET,
   formatBudgetSummary,
 } from "../utils/budget.ts";
-import type { DomainRecords } from "../utils/budget.ts";
 import { getExpertisePath, readConfig } from "../utils/config.ts";
 import { getFileModTime, readExpertiseFile } from "../utils/expertise.ts";
+import type { McpDomain, PrimeFormat } from "../utils/format.ts";
 import {
   formatDomainExpertise,
   formatDomainExpertiseCompact,
@@ -20,7 +21,6 @@ import {
   formatPrimeOutputXml,
   getSessionEndReminder,
 } from "../utils/format.ts";
-import type { McpDomain, PrimeFormat } from "../utils/format.ts";
 import { filterByContext, getChangedFiles, isGitRepo } from "../utils/git.ts";
 import { outputJsonError } from "../utils/json-output.ts";
 import { brand, isQuiet } from "../utils/palette.ts";

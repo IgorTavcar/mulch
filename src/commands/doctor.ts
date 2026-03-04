@@ -1,12 +1,10 @@
 import { existsSync } from "node:fs";
-import { writeFile as fsWriteFile, readFile, readdir } from "node:fs/promises";
-import { join } from "node:path";
+import { writeFile as fsWriteFile, readdir, readFile } from "node:fs/promises";
 import Ajv from "ajv";
 import chalk from "chalk";
 import type { Command } from "commander";
 import type { MulchConfig } from "../schemas/config.ts";
 import { recordSchema } from "../schemas/record-schema.ts";
-import type { ExpertiseRecord } from "../schemas/record.ts";
 import {
   getExpertiseDir,
   getExpertisePath,
@@ -20,7 +18,7 @@ import {
   readExpertiseFile,
   writeExpertiseFile,
 } from "../utils/expertise.ts";
-import { outputJson, outputJsonError } from "../utils/json-output.ts";
+import { outputJson } from "../utils/json-output.ts";
 import { withFileLock } from "../utils/lock.ts";
 import { brand, icons, isQuiet } from "../utils/palette.ts";
 import {

@@ -1,12 +1,12 @@
 import { describe, expect, it } from "bun:test";
 import type { ExpertiseRecord } from "../../src/schemas/record.ts";
+import type { DomainRecords } from "../../src/utils/budget.ts";
 import {
-  DEFAULT_BUDGET,
   applyBudget,
+  DEFAULT_BUDGET,
   estimateTokens,
   formatBudgetSummary,
 } from "../../src/utils/budget.ts";
-import type { DomainRecords } from "../../src/utils/budget.ts";
 import type { Outcome, ScoredRecord } from "../../src/utils/scoring.ts";
 
 function makeRecord(

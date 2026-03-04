@@ -2,8 +2,8 @@ import { createInterface } from "node:readline";
 import Ajv from "ajv";
 import chalk from "chalk";
 import type { Command } from "commander";
-import { recordSchema } from "../schemas/record-schema.ts";
 import type { ExpertiseRecord, RecordType } from "../schemas/record.ts";
+import { recordSchema } from "../schemas/record-schema.ts";
 import { getExpertisePath, readConfig } from "../utils/config.ts";
 import {
   generateRecordId,

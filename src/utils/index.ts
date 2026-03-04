@@ -1,21 +1,21 @@
 export {
-  getMulchDir,
   getConfigPath,
   getExpertiseDir,
   getExpertisePath,
+  getMulchDir,
+  initMulchDir,
   readConfig,
   writeConfig,
-  initMulchDir,
 } from "./config.ts";
 
 export {
-  readExpertiseFile,
   appendRecord,
-  createExpertiseFile,
-  getFileModTime,
   countRecords,
+  createExpertiseFile,
   filterByType,
   generateRecordId,
+  getFileModTime,
+  readExpertiseFile,
 } from "./expertise.ts";
 
 export {
@@ -25,30 +25,28 @@ export {
   formatTimeAgo,
   getRecordSummary,
 } from "./format.ts";
-
+export {
+  fileMatchesAny,
+  filterByContext,
+  getChangedFiles,
+  isGitRepo,
+} from "./git.ts";
 export {
   outputJson,
   outputJsonError,
 } from "./json-output.ts";
 
 export {
-  isGitRepo,
-  getChangedFiles,
-  fileMatchesAny,
-  filterByContext,
-} from "./git.ts";
-
-export {
-  MARKER_START,
-  MARKER_END,
   hasMarkerSection,
-  replaceMarkerSection,
+  MARKER_END,
+  MARKER_START,
   removeMarkerSection,
+  replaceMarkerSection,
   wrapInMarkers,
 } from "./markers.ts";
 
 export {
+  compareSemver,
   getCurrentVersion,
   getLatestVersion,
-  compareSemver,
 } from "./version.ts";

@@ -1,21 +1,14 @@
 import { existsSync } from "node:fs";
-import {
-  chmod,
-  mkdir,
-  readFile,
-  stat,
-  unlink,
-  writeFile,
-} from "node:fs/promises";
+import { chmod, mkdir, readFile, unlink, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import chalk from "chalk";
 import type { Command } from "commander";
 import { getMulchDir } from "../utils/config.ts";
 import { outputJson, outputJsonError } from "../utils/json-output.ts";
 import {
+  hasMarkerSection,
   MARKER_END,
   MARKER_START,
-  hasMarkerSection,
   removeMarkerSection,
 } from "../utils/markers.ts";
 

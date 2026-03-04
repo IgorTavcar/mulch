@@ -422,7 +422,7 @@ describe("compact command", () => {
 
       // With --min-group 5 (default), 4 records should not be compacted
       // unless they have stale records
-      const { default: findCandidates } = await import(
+      const { default: _findCandidates } = await import(
         "../../src/commands/compact.js"
       );
       // We'd need to export findCandidates to test this properly, or test via CLI

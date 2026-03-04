@@ -19,7 +19,7 @@ function generateBash(commands: string[], globalOptions: string[]): string {
 # Add to ~/.bashrc: eval "$(mulch completions bash)"
 _mulch() {
   local cur="\${COMP_WORDS[COMP_CWORD]}"
-  COMPREPLY=( $(compgen -W "${allWords}" -- "\$cur") )
+  COMPREPLY=( $(compgen -W "${allWords}" -- "$cur") )
 }
 complete -F _mulch mulch
 complete -F _mulch ml

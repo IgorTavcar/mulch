@@ -4,8 +4,8 @@ import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import yaml from "js-yaml";
-import { DEFAULT_CONFIG } from "../../src/schemas/config.ts";
 import type { MulchConfig } from "../../src/schemas/config.ts";
+import { DEFAULT_CONFIG } from "../../src/schemas/config.ts";
 import {
   getConfigPath,
   getExpertiseDir,

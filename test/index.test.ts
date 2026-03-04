@@ -17,8 +17,8 @@ import type {
 } from "../src/index.ts";
 
 import {
-  DEFAULT_CONFIG,
   appendRecord,
+  DEFAULT_CONFIG,
   findDuplicate,
   generateRecordId,
   getExpertisePath,

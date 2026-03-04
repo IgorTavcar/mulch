@@ -8,7 +8,9 @@
     "ml": "src/cli.ts"
   },
   "main": "src/index.ts",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "publishConfig": {
     "access": "public"
   },

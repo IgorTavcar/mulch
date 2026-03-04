@@ -26,7 +26,7 @@ import { registerUpdateCommand } from "./commands/update.ts";
 import { registerUpgradeCommand } from "./commands/upgrade.ts";
 import { registerValidateCommand } from "./commands/validate.ts";
 import { outputJsonError } from "./utils/json-output.ts";
-import { accent, brand, muted, setQuiet } from "./utils/palette.ts";
+import { brand, muted, setQuiet } from "./utils/palette.ts";
 
 export const VERSION = "0.6.3";
 

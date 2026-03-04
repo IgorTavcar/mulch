@@ -1,13 +1,13 @@
 import { describe, expect, it } from "bun:test";
 import {
-  type Outcome,
-  type ScoredRecord,
   applyConfirmationBoost,
   computeConfirmationScore,
   getFailureCount,
   getSuccessCount,
   getSuccessRate,
   getTotalApplications,
+  type Outcome,
+  type ScoredRecord,
   sortByConfirmationScore,
 } from "../../src/utils/scoring.ts";
 

@@ -1,18 +1,18 @@
 import { afterEach, beforeEach, describe, expect, it, spyOn } from "bun:test";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { Command } from "commander";
 import { registerPrimeCommand } from "../../src/commands/prime.ts";
 import { DEFAULT_CONFIG } from "../../src/schemas/config.ts";
 import type { ExpertiseRecord } from "../../src/schemas/record.ts";
+import type { DomainRecords } from "../../src/utils/budget.ts";
 import {
-  DEFAULT_BUDGET,
   applyBudget,
+  DEFAULT_BUDGET,
   estimateTokens,
   formatBudgetSummary,
 } from "../../src/utils/budget.ts";
-import type { DomainRecords } from "../../src/utils/budget.ts";
 import {
   getExpertisePath,
   initMulchDir,
@@ -1640,7 +1640,7 @@ describe("prime command", () => {
 
   describe("session-end reminder", () => {
     it("compact output includes session close protocol", () => {
-      const output = formatPrimeOutputCompact([]);
+      const _output = formatPrimeOutputCompact([]);
       const reminder = getSessionEndReminder("markdown");
       // The reminder is appended by prime.ts, but verify the function itself
       expect(reminder).toContain("SESSION CLOSE PROTOCOL");

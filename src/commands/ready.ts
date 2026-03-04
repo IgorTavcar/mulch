@@ -5,7 +5,7 @@ import { getExpertisePath, readConfig } from "../utils/config.ts";
 import { readExpertiseFile } from "../utils/expertise.ts";
 import { formatTimeAgo, getRecordSummary } from "../utils/format.ts";
 import { outputJson, outputJsonError } from "../utils/json-output.ts";
-import { accent, isQuiet } from "../utils/palette.ts";
+import { accent } from "../utils/palette.ts";
 
 interface AnnotatedRecord {
   domain: string;

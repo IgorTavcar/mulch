@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from "node:fs";
 import Ajv from "ajv";
 import chalk from "chalk";
 import { type Command, Option } from "commander";
-import { recordSchema } from "../schemas/record-schema.ts";
 import type {
   Classification,
   Evidence,
@@ -10,6 +9,7 @@ import type {
   Outcome,
   RecordType,
 } from "../schemas/record.ts";
+import { recordSchema } from "../schemas/record-schema.ts";
 import { addDomain, getExpertisePath, readConfig } from "../utils/config.ts";
 import {
   appendRecord,
@@ -36,7 +36,7 @@ const RECORD_TYPE_REQUIREMENTS: Record<string, string> = {
  */
 export async function processStdinRecords(
   domain: string,
-  jsonMode: boolean,
+  _jsonMode: boolean,
   force: boolean,
   dryRun: boolean,
   stdinData?: string,

@@ -6,8 +6,8 @@ import {
   filterByType,
   getFileModTime,
   readExpertiseFile,
+  searchRecords,
 } from "../utils/expertise.ts";
-import { searchRecords } from "../utils/expertise.ts";
 import {
   formatDomainExpertise,
   formatDomainExpertiseCompact,

@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "bun:test";
 import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import type { ScoredRecord } from "../src/index.ts";
 import {
   applyConfirmationBoost,
   computeConfirmationScore,
@@ -15,7 +16,6 @@ import {
   searchExpertise,
   sortByConfirmationScore,
 } from "../src/index.ts";
-import type { ScoredRecord } from "../src/index.ts";
 import { DEFAULT_CONFIG } from "../src/schemas/config.ts";
 import type { ExpertiseRecord } from "../src/schemas/record.ts";
 import {

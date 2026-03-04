@@ -6,8 +6,8 @@ import { join } from "node:path";
 import Ajv from "ajv";
 import { processStdinRecords } from "../../src/commands/record.ts";
 import { DEFAULT_CONFIG } from "../../src/schemas/config.ts";
-import { recordSchema } from "../../src/schemas/record-schema.ts";
 import type { ExpertiseRecord } from "../../src/schemas/record.ts";
+import { recordSchema } from "../../src/schemas/record-schema.ts";
 import {
   getExpertisePath,
   initMulchDir,

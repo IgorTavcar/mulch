@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { VERSION_MARKER, runOnboard } from "../../src/commands/onboard.ts";
+import { runOnboard, VERSION_MARKER } from "../../src/commands/onboard.ts";
 import { MARKER_END, MARKER_START } from "../../src/utils/markers.ts";
 
 describe("onboard command", () => {

@@ -1,8 +1,8 @@
 import { describe, expect, it } from "bun:test";
 import {
+  hasMarkerSection,
   MARKER_END,
   MARKER_START,
-  hasMarkerSection,
   removeMarkerSection,
   replaceMarkerSection,
   wrapInMarkers,

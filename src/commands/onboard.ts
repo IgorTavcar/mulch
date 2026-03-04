@@ -4,8 +4,6 @@ import chalk from "chalk";
 import type { Command } from "commander";
 import { outputJson, outputJsonError } from "../utils/json-output.ts";
 import {
-  MARKER_END,
-  MARKER_START,
   hasMarkerSection,
   replaceMarkerSection,
   wrapInMarkers,

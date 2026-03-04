@@ -1,8 +1,8 @@
 import Ajv from "ajv";
 import chalk from "chalk";
 import { type Command, Option } from "commander";
-import { recordSchema } from "../schemas/record-schema.ts";
 import type { Classification, Outcome } from "../schemas/record.ts";
+import { recordSchema } from "../schemas/record-schema.ts";
 import { getExpertisePath, readConfig } from "../utils/config.ts";
 import {
   readExpertiseFile,

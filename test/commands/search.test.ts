@@ -5,7 +5,6 @@ import { join } from "node:path";
 import { Command } from "commander";
 import { registerSearchCommand } from "../../src/commands/search.ts";
 import { DEFAULT_CONFIG } from "../../src/schemas/config.ts";
-import type { ExpertiseRecord } from "../../src/schemas/record.ts";
 import {
   getExpertisePath,
   initMulchDir,

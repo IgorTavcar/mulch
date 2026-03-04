@@ -3,7 +3,7 @@ import type {
   ExpertiseRecord,
   RecordType,
 } from "../schemas/record.ts";
-import { type ScoredRecord, computeConfirmationScore } from "./scoring.ts";
+import { computeConfirmationScore, type ScoredRecord } from "./scoring.ts";
 
 export const DEFAULT_BUDGET = 4000;
 

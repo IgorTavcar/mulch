@@ -84,7 +84,7 @@ describe("BM25", () => {
         recorded_at: "2024-01-01T00:00:00Z",
       };
 
-      const { allText, fieldTexts } = extractRecordText(record);
+      const { allText } = extractRecordText(record);
 
       expect(allText).toContain("Test failed");
       expect(allText).toContain("integration tests");
@@ -100,7 +100,7 @@ describe("BM25", () => {
         recorded_at: "2024-01-01T00:00:00Z",
       };
 
-      const { allText, fieldTexts } = extractRecordText(record);
+      const { allText } = extractRecordText(record);
 
       expect(allText).toContain("Use TypeScript");
       expect(allText).toContain("Type safety");
@@ -117,7 +117,7 @@ describe("BM25", () => {
         recorded_at: "2024-01-01T00:00:00Z",
       };
 
-      const { allText, fieldTexts } = extractRecordText(record);
+      const { allText } = extractRecordText(record);
 
       expect(allText).toContain("BM25 Algorithm");
       expect(allText).toContain("Ranking function for search");
@@ -133,7 +133,7 @@ describe("BM25", () => {
         recorded_at: "2024-01-01T00:00:00Z",
       };
 
-      const { allText, fieldTexts } = extractRecordText(record);
+      const { allText } = extractRecordText(record);
 
       expect(allText).toContain("Testing Guide");
       expect(allText).toContain("How to write tests");

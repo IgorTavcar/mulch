@@ -1,7 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from "bun:test";
-import { existsSync } from "node:fs";
 import {
-  lstat,
   mkdtemp,
   readFile,
   rm,

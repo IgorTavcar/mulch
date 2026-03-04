@@ -5,7 +5,6 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   GITATTRIBUTES_LINE,
-  MULCH_README,
   getConfigPath,
   getExpertiseDir,
   getMulchDir,

@@ -13,7 +13,6 @@ import { join } from "node:path";
 import {
   CLAUDE_HOOK_COMMAND,
   CURSOR_RULE_CONTENT,
-  MULCH_HOOK_SECTION,
   checkGitHook,
   installGitHook,
   recipes,

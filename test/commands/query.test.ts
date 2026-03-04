@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, spyOn } from "bun:test";
-import { appendFile, mkdtemp, rm, writeFile } from "node:fs/promises";
+import { appendFile, mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { Command } from "commander";
