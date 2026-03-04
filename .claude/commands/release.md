@@ -1,3 +1,9 @@
+---
+name: release
+---
+
+## intro
+
 Prepare a release by updating docs and bumping the version.
 
 User specified: $ARGUMENTS
